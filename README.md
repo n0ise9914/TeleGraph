@@ -2,8 +2,10 @@
 TeleGraph is a Telegram bot manager that support Plugins, each plugin can do everything with telegram.
 
 #Library
-+ TeleGraph.dll: Main Application (bot manager) use it.
-+ TeleGraph.Plugin.dll: Plugins use this to connect to Main App.
+DLL | Summery
+--- | ---
++ *TeleGraph.dll*: | Main Application (bot manager) use it.
++ *TeleGraph.Plugin.dll*: | Plugins use this to connect to Main App.
 
 #Plugin
 
