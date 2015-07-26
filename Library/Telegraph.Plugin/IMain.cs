@@ -14,7 +14,7 @@ namespace TeleGraph.Plugin
             get;
             set;
         }
-        TeleGraph.Plugin.IPluginAdaptor PluginAdaptor
+        TeleGraph.Plugin.IPluginAdaptor PluginAdapter
         {
             set;
         }
