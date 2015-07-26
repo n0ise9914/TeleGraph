@@ -5,8 +5,8 @@
 #Library
 DLL | Summery
 --- | ---
-**TeleGraph.dll** | Main Application (bot manager) use it.
-**TeleGraph.Plugin.dll** | Plugins use this to connect to Main App.
+**TeleGraph.dll** | main application (bot manager) use it.
+**TeleGraph.Plugin.dll** | plugins use this to connect to main app.
 
 #Make Plugin
 
@@ -23,4 +23,3 @@ public void OnReviceMessage(Message message)
 ```csharp
 pluginadaptor.Client.SendTextMessage(message.Chat.Id, "Your Message.");
 ```
-TeleGraph
