@@ -1,5 +1,6 @@
 # About
-TeleGraph is a Telegram bot manager that support Plugins, each plugin can do everything with telegram.
++ C# [telegram](http://telegram.com/) bot manager library that support plugins.
++ this library uses [telegram.bot](https://github.com/MrRoundRobin/telegram.bot)
 
 #Library
 DLL | Summery
@@ -8,8 +9,9 @@ DLL | Summery
 **TeleGraph.Plugin.dll** | Plugins use this to connect to Main App.
 
 #Make Plugin
-**Each plugin should have a main.cs class implemented from TeleGram.Plugin.Imain.**
-**All message's from Telegram come into OnReviceMessage() method in plugin.**
+
++ Each plugin should have a main.cs class implemented from TeleGram.Plugin.Imain.
++ All message's from Telegram come into OnReviceMessage() method in plugin.
 ```csharp
 public void OnReviceMessage(Message message)
 {
@@ -17,7 +19,7 @@ public void OnReviceMessage(Message message)
     pluginadaptor.OnMessage(this, message.Text);    
 }
 ```
-**You can send message's by Client**
++ Sending messages from plugin is using pluginadaptor.Client
 ```csharp
 pluginadaptor.Client.SendTextMessage(message.Chat.Id, "Your Message.");
 ```
