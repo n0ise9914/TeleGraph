@@ -2,11 +2,9 @@
 TeleGraph is a Telegram bot manager that support Plugins, each plugin can do everything with telegram.
 
 ```csharp
-static async void testApiAsync()
+public void OnReviceMessage(Message message)
 {
-    var Bot = new Telegram.Bot.Api("your API access Token");
-    var me = await Bot.GetMe();
-    System.Console.WriteLine("Hello my name is " + me.FirstName);
+    pluginadaptor.OnMessage(this, "From: " + message.From.FirstName +"Message: " + message.Text + Environment.NewLine);    
 }
 ```
 TeleGraph
