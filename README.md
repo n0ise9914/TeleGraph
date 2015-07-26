@@ -8,4 +8,4 @@ TeleGraph is a Telegram bot manager that support Plugins, each plugin can do eve
     Api = new Telegram.Bot.Api(token);         
   }
 
-# TeleGraph
+TeleGraph
