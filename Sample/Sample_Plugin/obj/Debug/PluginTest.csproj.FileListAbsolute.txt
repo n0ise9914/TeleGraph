@@ -1,0 +1,8 @@
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\bin\Debug\TeleBot.Adapter.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\bin\Debug\TeleBot.Adapter.pdb
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\obj\Debug\PluginTest.csprojResolveAssemblyReference.cache
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\bin\Debug\PluginTest.dll.config
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\bin\Debug\PluginTest.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\bin\Debug\PluginTest.pdb
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\obj\Debug\PluginTest.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Plugin\obj\Debug\PluginTest.pdb

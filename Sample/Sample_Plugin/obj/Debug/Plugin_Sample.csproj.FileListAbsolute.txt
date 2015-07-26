@@ -1,0 +1,8 @@
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\bin\Debug\PluginTest.dll.config
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\bin\Debug\PluginTest.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\bin\Debug\PluginTest.pdb
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\bin\Debug\Telegraph.Plugin.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\bin\Debug\Telegraph.Plugin.pdb
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\obj\Debug\Plugin_Sample.csprojResolveAssemblyReference.cache
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\obj\Debug\PluginTest.dll
+C:\Users\noise\Desktop\Telegram\TeleBot\Sample\PluginSample\obj\Debug\PluginTest.pdb

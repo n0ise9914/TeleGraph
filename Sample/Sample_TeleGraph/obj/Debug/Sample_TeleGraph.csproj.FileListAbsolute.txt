@@ -1,0 +1,16 @@
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\bin\Debug\Sample_TeleGraph.exe.config
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\bin\Debug\Sample_TeleGraph.exe
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\bin\Debug\Sample_TeleGraph.pdb
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.csprojResolveAssemblyReference.cache
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.csproj.Sample_TeleGraph.exe.config
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.Properties.Resources.resources
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.csproj.GenerateResource.Cache
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.exe
+C:\Users\noise\Desktop\Telegram\TeleGraph\Sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.pdb
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.Item_command.resources
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.Item_Plugin.resources
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\obj\Debug\Sample_TeleGraph.Main.resources
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\bin\Debug\Telegraph.dll
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\bin\Debug\Telegraph.Plugin.dll
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\bin\Debug\Telegraph.pdb
+C:\Users\noise\Desktop\Telegram\TeleGraph\sample\Sample_TeleGraph\bin\Debug\Telegraph.Plugin.pdb

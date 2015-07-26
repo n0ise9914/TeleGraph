@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleGraph", "Library\Telegraph\TeleGraph.csproj", "{1332F9BC-9CC7-421A-A42B-39BC46662321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample_Plugin", "Sample\Sample_Plugin\Sample_Plugin.csproj", "{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleGraph.Plugin", "Library\Telegraph.Plugin\TeleGraph.Plugin.csproj", "{864B201B-AD28-42D3-A026-2C889B4A57A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample_TeleGraph", "sample\Sample_TeleGraph\Sample_TeleGraph.csproj", "{4D66F5F4-F89C-4881-9BC3-1C769A0E3678}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{4D719F1C-CDBC-4A8E-86EA-6C970410A37D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{C8062CCB-75D3-4DA0-B61A-56061DDA4D7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1332F9BC-9CC7-421A-A42B-39BC46662321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1332F9BC-9CC7-421A-A42B-39BC46662321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1332F9BC-9CC7-421A-A42B-39BC46662321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1332F9BC-9CC7-421A-A42B-39BC46662321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864B201B-AD28-42D3-A026-2C889B4A57A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864B201B-AD28-42D3-A026-2C889B4A57A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864B201B-AD28-42D3-A026-2C889B4A57A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864B201B-AD28-42D3-A026-2C889B4A57A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D66F5F4-F89C-4881-9BC3-1C769A0E3678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D66F5F4-F89C-4881-9BC3-1C769A0E3678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D66F5F4-F89C-4881-9BC3-1C769A0E3678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D66F5F4-F89C-4881-9BC3-1C769A0E3678}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1332F9BC-9CC7-421A-A42B-39BC46662321} = {4D719F1C-CDBC-4A8E-86EA-6C970410A37D}
+		{B9EF3A85-6DCD-47C3-8E6B-6EC1BB054947} = {C8062CCB-75D3-4DA0-B61A-56061DDA4D7C}
+		{864B201B-AD28-42D3-A026-2C889B4A57A1} = {4D719F1C-CDBC-4A8E-86EA-6C970410A37D}
+		{4D66F5F4-F89C-4881-9BC3-1C769A0E3678} = {C8062CCB-75D3-4DA0-B61A-56061DDA4D7C}
+	EndGlobalSection
+EndGlobal

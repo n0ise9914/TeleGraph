@@ -1,0 +1,4 @@
+C:\Users\noise\Desktop\Telegram\Telebot\Base\bin\Debug\Base.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Base\bin\Debug\Base.pdb
+C:\Users\noise\Desktop\Telegram\Telebot\Base\obj\Debug\Base.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Base\obj\Debug\Base.pdb

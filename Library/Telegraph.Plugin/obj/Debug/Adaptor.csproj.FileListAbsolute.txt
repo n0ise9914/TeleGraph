@@ -1,0 +1,10 @@
+C:\Users\noise\Desktop\Telegram\Telebot\Types\bin\Debug\TeleBot.Adaptor.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Types\bin\Debug\TeleBot.Adaptor.pdb
+C:\Users\noise\Desktop\Telegram\Telebot\Types\obj\Debug\TeleBot.Adaptor.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Types\obj\Debug\TeleBot.Adaptor.pdb
+C:\Users\noise\Desktop\Telegram\Telebot\Types\obj\Debug\Adaptor.csprojResolveAssemblyReference.cache
+C:\Users\noise\Desktop\Telegram\Telebot\Adapter\bin\Debug\TeleBot.Adapter.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Adapter\bin\Debug\TeleBot.Adapter.pdb
+C:\Users\noise\Desktop\Telegram\Telebot\Adapter\obj\Debug\Adaptor.csprojResolveAssemblyReference.cache
+C:\Users\noise\Desktop\Telegram\Telebot\Adapter\obj\Debug\TeleBot.Adapter.dll
+C:\Users\noise\Desktop\Telegram\Telebot\Adapter\obj\Debug\TeleBot.Adapter.pdb
