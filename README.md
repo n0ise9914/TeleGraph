@@ -8,8 +8,8 @@ DLL | Summery
 **TeleGraph.Plugin.dll** | Plugins use this to connect to Main App.
 
 #Make Plugin
-+Each plugin should have a main.cs class implemented from TeleGram.Plugin.Imain.
-+All message's from Telegram come into OnReviceMessage() method in plugin.
+**Each plugin should have a main.cs class implemented from TeleGram.Plugin.Imain.**
+**All message's from Telegram come into OnReviceMessage() method in plugin.**
 ```csharp
 public void OnReviceMessage(Message message)
 {
@@ -17,7 +17,7 @@ public void OnReviceMessage(Message message)
     pluginadaptor.OnMessage(this, message.Text);    
 }
 ```
-+You can send message's by Client
+**You can send message's by Client**
 ```csharp
 pluginadaptor.Client.SendTextMessage(message.Chat.Id, "Your Message.");
 ```
