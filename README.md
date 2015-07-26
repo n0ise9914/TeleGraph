@@ -1,7 +1,8 @@
 # About
 + C# [telegram](http://telegram.com/) bot manager library that support plugins.
 + this library uses [telegram.bot](https://github.com/MrRoundRobin/telegram.bot)
-
++ comment and issues: [https://telegram.me/joinchat/060d07870156dae55c15917453296746](https://telegram.me/joinchat/060d07870156dae55c15917453296746)
+ 
 #Library
 DLL | Summery
 --- | ---
