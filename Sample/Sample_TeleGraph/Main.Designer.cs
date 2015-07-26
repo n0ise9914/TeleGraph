@@ -35,11 +35,11 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Commands_Directory = new System.Windows.Forms.TextBox();
+            this.Plugins_Directory = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Bot_Token = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Connect = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cPlugin1 = new Sample_TeleGraph.Item_Plugin();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -91,11 +91,11 @@
             // 
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.Commands_Directory);
+            this.tabPage3.Controls.Add(this.Plugins_Directory);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.Bot_Token);
-            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.Connect);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -122,21 +122,19 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Plugins Directory:";
             // 
-            // textBox2
+            // Commands_Directory
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(6, 178);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(441, 20);
-            this.textBox2.TabIndex = 5;
+            this.Commands_Directory.Location = new System.Drawing.Point(6, 178);
+            this.Commands_Directory.Name = "Commands_Directory";
+            this.Commands_Directory.Size = new System.Drawing.Size(441, 20);
+            this.Commands_Directory.TabIndex = 5;
             // 
-            // textBox1
+            // Plugins_Directory
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(6, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(441, 20);
-            this.textBox1.TabIndex = 4;
+            this.Plugins_Directory.Location = new System.Drawing.Point(6, 128);
+            this.Plugins_Directory.Name = "Plugins_Directory";
+            this.Plugins_Directory.Size = new System.Drawing.Size(441, 20);
+            this.Plugins_Directory.TabIndex = 4;
             // 
             // label3
             // 
@@ -153,17 +151,17 @@
             this.Bot_Token.Name = "Bot_Token";
             this.Bot_Token.Size = new System.Drawing.Size(441, 20);
             this.Bot_Token.TabIndex = 2;
-            this.Bot_Token.Text = "114192963:AAHbGKIIB5YT-EqtRp_MPY5QEfQpcUf9qMY";
+            this.Bot_Token.Text = "114192963:AAHxVFCgn0ZhVWOyzC9vF6DeyEAfbJi38Mk";
             // 
-            // button2
+            // Connect
             // 
-            this.button2.Location = new System.Drawing.Point(172, 267);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Login";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Connect.Location = new System.Drawing.Point(172, 267);
+            this.Connect.Name = "Connect";
+            this.Connect.Size = new System.Drawing.Size(75, 23);
+            this.Connect.TabIndex = 1;
+            this.Connect.Text = "Connect";
+            this.Connect.UseVisualStyleBackColor = true;
+            this.Connect.Click += new System.EventHandler(this.Connect_Click);
             // 
             // tabPage1
             // 
@@ -225,14 +223,14 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Connect;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Bot_Token;
         private Item_Plugin cPlugin1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Commands_Directory;
+        private System.Windows.Forms.TextBox Plugins_Directory;
     }
 }
 

@@ -12,6 +12,11 @@ namespace TeleGraph
         public delegate void _OnError(object sender, Exception ex);
         public event _OnError OnError;
 
+        public delegate void _OnTaskDone(Task<Telegram.Bot.Types.Message> task);
+        public event _OnTaskDone OnTaskDone;
+
+        private Parser parser = new Parser();
+
         private Parser MessageParser = new Parser();
         private Telegram.Bot.Api api;
         public Telegram.Bot.Api Api
@@ -34,9 +39,7 @@ namespace TeleGraph
                 id = value;
             }
         }
-        public delegate void _OnTaskDone(Task<Telegram.Bot.Types.Message> task);
-        public event _OnTaskDone OnTaskDone;
-        private Parser parser = new Parser();
+
         public void SendTextMessage(int chatId, string text, bool disableWebPagePreview = false, int replyToMessageId = 0, ReplyKeyboardMarkup ReplyKeyboardMarkup = null)
         {
             try

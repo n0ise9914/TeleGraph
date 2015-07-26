@@ -25,15 +25,13 @@ namespace Sample_TeleGraph
             InitializeComponent();
         }
 
-        string Plugins_Directory = Application.StartupPath + @"\Plugins\";
-        string Commands_Directory = Application.StartupPath + @"\commands\";
-
         private Manager manager;
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Plugins_Directory;
-            textBox2.Text = Commands_Directory;
-            manager = new Manager(Bot_Token.Text, Plugins_Directory, Commands_Directory);
+            Plugins_Directory.Text = Application.StartupPath + @"\plugins\";
+            Commands_Directory.Text = Application.StartupPath + @"\commands\";
+
+            manager = new Manager(Bot_Token.Text, Plugins_Directory.Text, Commands_Directory.Text);
             manager.OnMessage += Manager_OnMessage;
             manager.OnError += Manager_OnError;
             manager.Client.OnConnected += Client_OnConnected;
@@ -41,13 +39,21 @@ namespace Sample_TeleGraph
 
             cPlugin1.OnSaveChanges += CPlugin1_OnSaveChanges;
 
-            foreach (PluginObj plugin in manager.PluginManager.Plugins)
-                listBox1.Items.Add(plugin.ConfigAdaptor.Name);
+            try
+            {
+                foreach (PluginObj plugin in manager.PluginManager.Plugins)
+                    listBox1.Items.Add(plugin.ConfigAdaptor.Name);
+            }
+            catch(Exception ex)
+            {
+                Console.Text += ex.Message + Environment.NewLine;
+            }
+     
         }
 
         private void CPlugin1_OnSaveChanges(Commands commands, PluginObj plugin)
         {
-            manager.PluginManager.SaveCommand(Commands_Directory, commands, plugin.ConfigAdaptor.Name);
+            manager.PluginManager.SaveCommand(Commands_Directory.Text, commands, plugin.ConfigAdaptor.Name);
             MessageBox.Show("Saved Commands!");
         }
 
@@ -57,11 +63,7 @@ namespace Sample_TeleGraph
             Console.Text += Environment.NewLine + "Connected to Telegram Web API ! " + Environment.NewLine + "Bot_ID: " + me.Id + " Bot_FirstName: " + me.FirstName + "Bot_LastName: " + me.LastName + " Bot_UserName: " + me.Username;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            manager.UpdateDelay = 1000;
-            manager.Client.Connect();
-        }
+
         private void Manager_OnError(object sender, Exception ex)
         {
             if (this.InvokeRequired) BeginInvoke(new MethodInvoker(delegate () { Console.Text += ex.Message + Environment.NewLine; }));
@@ -77,5 +79,10 @@ namespace Sample_TeleGraph
                     cPlugin1.LoadPlugin(plugin);
         }
 
+        private void Connect_Click(object sender, EventArgs e)
+        {
+            manager.UpdateDelay = 1000;
+            manager.Client.Connect();
+        }
     }
 }

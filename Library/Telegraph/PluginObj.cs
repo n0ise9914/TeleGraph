@@ -27,7 +27,7 @@ namespace TeleGraph
             }
         }
         private string _pluginname;
-        public PluginObj(string pluginfolder, string pluginname, PluginAdaptor pluginadaptor)
+        public void Load(string pluginfolder, string pluginname, PluginAdaptor pluginadaptor)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace TeleGraph
                 pluginAsm = Assembly.LoadFile(pluginfolder + _pluginname + ".dll");
                 CoreType = pluginAsm.GetType(_pluginname + ".Main");
                 Core = Activator.CreateInstance(CoreType);
-                ClientPropertyInfo = CoreType.GetProperty("PluginAdaptor");
+                ClientPropertyInfo = CoreType.GetProperty("PluginAdapter");
                 ClientPropertyInfo.SetValue(Core, pluginadaptor, null);
 
                 ConfigPropertyInfo = CoreType.GetProperty("Config");

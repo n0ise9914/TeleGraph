@@ -23,7 +23,8 @@ namespace TeleGraph
         public event _OnError OnError;
 
         private TeleGraph.ClientAdapter client = new TeleGraph.ClientAdapter();
-        private PluginAdaptor pluginadaptor;
+        private PluginAdaptor pluginadapter;
+        private PluginValidator pluginvalidator = new PluginValidator();
 
         public PluginManager(Telegram.Bot.Api _Api, string plugin_directory)
         {
@@ -33,9 +34,9 @@ namespace TeleGraph
                 client.OnTaskDone += OnTaskDone;
                 client.Api = _Api;
                 client.Id = 9914;
-                pluginadaptor = new PluginAdaptor(client);
-                pluginadaptor.Onerror += (sender, error) => { OnError(sender, error); };
-                pluginadaptor.Onmessage += (sender, message) => { OnMessage(sender, message); };
+                pluginadapter = new PluginAdaptor(client);
+                pluginadapter.Onerror += (sender, error) => { OnError(sender, error); };
+                pluginadapter.Onmessage += (sender, message) => { OnMessage(sender, message); };
             }
             catch (Exception ex)
             {
@@ -43,7 +44,6 @@ namespace TeleGraph
             }
         }
 
-        private PluginValidator pluginvalidator = new PluginValidator();
         private List<PluginObj> plugins = new List<PluginObj>();
         public List<PluginObj> Plugins
         {
@@ -65,8 +65,9 @@ namespace TeleGraph
                     PluginName = file.Name.Substring(0, file.Name.IndexOf(".dll"));
                     if (pluginvalidator.IsPLuginValid(PluginFolder, PluginName))
                     {
-                        PluginObj p = new PluginObj(PluginFolder, PluginName, pluginadaptor);
+                        PluginObj p = new PluginObj();
                         p.OnError += P_OnError;
+                        p.Load(PluginFolder, PluginName, pluginadapter);
                         plugins.Add(p);
                         OnPluginLoaded(p);
                     }
@@ -99,9 +100,9 @@ namespace TeleGraph
         }
         private void OnTaskDone(Task<Telegram.Bot.Types.Message> task)
         {
-            // System.Windows.Forms.MessageBox.Show(task.Status.ToString());
+            OnMessage(this, task.Status.ToString());
         }
-        public void CheckCommand(PluginObj plugin,string commands_directory)
+        public void CheckCommand(PluginObj plugin, string commands_directory)
         {
             try
             {
@@ -125,7 +126,7 @@ namespace TeleGraph
                 OnError(this, ex);
             }
         }
-        public void SaveCommand(string Commands_Directory,Commands commands,string PluginName)
+        public void SaveCommand(string Commands_Directory, Commands commands, string PluginName)
         {
             string SerializedCommands = JsonConvert.SerializeObject(commands);
             System.IO.File.WriteAllText(Commands_Directory + HttpUtility.UrlEncode(PluginName) + ".json", SerializedCommands);

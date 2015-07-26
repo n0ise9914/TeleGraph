@@ -20,12 +20,15 @@ namespace TeleGraph
                 pluginAsm = Assembly.LoadFile(pluginfolder + pluginname + ".dll");
                 CoreType = pluginAsm.GetType(pluginname + ".Main");
                 Core = Activator.CreateInstance(CoreType);
-                ClientPropertyInfo = CoreType.GetProperty("PluginAdaptor");
+                ClientPropertyInfo = CoreType.GetProperty("PluginAdapter");
                 ConfigPropertyInfo = CoreType.GetProperty("Config");
                 config = (TeleGraph.Plugin.Config)ConfigPropertyInfo.GetValue(Core, null);
-            return true;
+                return true;
             }
-            catch (Exception ex) { return false; };
+            catch (Exception ex)
+            {
+                return false;
+            };
         }
     }
 }
