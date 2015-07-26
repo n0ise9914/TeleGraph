@@ -20,7 +20,7 @@ public void OnReviceMessage(Message message)
     pluginadaptor.OnMessage(this, message.Text);    
 }
 ```
-+ Sending messages from plugin is using pluginadapter.Client
++ Sending messages from plugin using pluginadapter.Client
 ```csharp
 pluginadapter.Client.SendTextMessage(message.Chat.Id, "Your Message.");
 ```
