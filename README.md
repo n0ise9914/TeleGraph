@@ -9,7 +9,7 @@ DLL | Summery
 **TeleGraph.Plugin.dll** | plugins use this to connect to main app.
 
 #Make Plugin
-
++ [Plugin Sample](https://github.com/MaxbuzzTM/TeleGraph/tree/master/Sample/Sample_Plugin)
 + Each plugin should have a main.cs class implemented from TeleGram.Plugin.Imain.
 + All message's from Telegram come into OnReviceMessage() method in plugin.
 ```csharp
